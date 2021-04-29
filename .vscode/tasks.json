@@ -24,6 +24,25 @@
 				"isDefault": true
 			},
 			"detail": "компилятор: /usr/bin/g++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cpp сборка активного файла",
+			"command": "/usr/bin/cpp",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "компилятор: /usr/bin/cpp"
 		}
 	]
 }
